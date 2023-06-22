@@ -17,19 +17,19 @@ function App() {
   return (
     <>
       <Header />
-      <Services />
+      {/* <Services />
       <Price />
       <TestominialOne />
       <Reasons />
       <Status />
       <Process />
-      <TestomonialTwo />
-      <Packages />
+      <TestomonialTwo /> */}
+      {/* <Packages />
       <Feedback />
       <Sample />
       <Faq />
       <Footer />
-      <Copyright />
+      <Copyright /> */}
     </>
   );
 }

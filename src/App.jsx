@@ -26,7 +26,7 @@ function App() {
       <TestomonialTwo />
       <Packages />
       <Feedback />
-      {/* <Sample /> */}
+      <Sample />
       <Faq />
       <Footer />
       <Copyright />

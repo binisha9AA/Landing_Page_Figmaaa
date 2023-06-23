@@ -9,7 +9,7 @@ function toggleHamburger() {
 export default function Navigation() {
   return (
     <>
-      <div className="nav">
+      <div className="nav rounded-[16px]">
         <div className="nav-header">
           <div className="nav-title hidden h-full md:flex">
             <a href="" className="pl-[20px] flex items-center h-full">

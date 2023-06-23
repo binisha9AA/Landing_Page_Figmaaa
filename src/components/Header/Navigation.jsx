@@ -19,7 +19,7 @@ export default function Navigation() {
           </div>
         </div>
         <div className="nav-btn" onClick={toggleHamburger}>
-          <label for="nav-check">
+          <label htmlFor="nav-check">
             <span></span>
             <span></span>
             <span></span>

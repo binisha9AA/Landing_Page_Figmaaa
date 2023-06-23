@@ -39,8 +39,8 @@ body {
 
 .nav > .nav-links {
   display: flex;
-  float: right;
-  font-size: 18px;
+  /* float: right; */
+  font-size: 16px;
   /* justify-content: space-evenly;
   gap: 12px; */
   height: 100%;
@@ -131,4 +131,12 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+}
+.package_container {
+  background: linear-gradient(
+    to bottom,
+    #f0f8f8 0%,
+    #f0f8f8 70%,
+    rgba(0, 0, 0, 0) 40%
+  );
 }

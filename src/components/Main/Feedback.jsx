@@ -65,7 +65,7 @@ const feedback = [
 export default function Feedback() {
   return (
     <>
-      <section className="Feedback_section w-full max-w-[1165px]  mx-auto my-10">
+      <section className="Feedback_section w-full max-w-[1165px] mt-[24rem] sm:mt-0  mx-auto my-10">
         <section className="feedback w-full max-w-[1040px] mx-auto">
           <h2 className="text-center mt-7 font-bold text-[20px] md:text-[28px]">
             They talk about it

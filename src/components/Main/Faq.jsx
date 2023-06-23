@@ -36,60 +36,60 @@ export default function Faq() {
     },
   ];
   return (
-    <section className='FAQ_section'>
-      <div className='w-full max-w-[1165px] px-5  mx-auto mb-[104px]'>
-        <h1 className='title__accordion  text-center font-bold text-xl mb-8'>
+    <section className="FAQ_section">
+      <div className="w-full max-w-[1165px] px-5  mx-auto mb-[104px]">
+        <h2 className="title__accordion  text-center font-bold text-xl mb-8">
           Need Help? Read FAQs
-        </h1>
-        <div className='flex gap-10 '>
-          <section className='basis-[30%] bg-[#E9F3FE] leading-[3.5rem] p-[24px] h-[429.48px]'>
-            <h3 className='font-bold text-base md:text-[24px]'>
+        </h2>
+        <div className="flex gap-10 ">
+          <section className="basis-[30%] bg-[#E9F3FE] leading-[3.5rem] p-[24px] h-[429.48px]">
+            <h3 className="font-bold text-base md:text-[24px]">
               Table of Content
             </h3>
-            <a href=''>
-              <p className='text-[#55BDB3] font-medium text-[16px]'>Process</p>
+            <a href="">
+              <p className="text-[#55BDB3] font-medium text-[16px]">Process</p>
             </a>
             <hr />
             <p>
-              <a href='' className='text-[#C4C4C4] font-medium text-[16px]'>
+              <a href="" className="text-[#C4C4C4] font-medium text-[16px]">
                 Support
               </a>
             </p>
             <hr />
             <p>
-              <a href='' className='text-[#C4C4C4] font-medium text-[16px]'>
+              <a href="" className="text-[#C4C4C4] font-medium text-[16px]">
                 Discount
               </a>
             </p>
             <hr />
             <p>
-              <a href='' className='text-[#C4C4C4] font-medium text-[16px]'>
+              <a href="" className="text-[#C4C4C4] font-medium text-[16px]">
                 Billing
               </a>
             </p>
             <hr />
             <p>
-              <a href='' className='text-[#C4C4C4] font-medium text-[16px]'>
+              <a href="" className="text-[#C4C4C4] font-medium text-[16px]">
                 Office and Cleaning
               </a>
             </p>
             <hr />
           </section>
 
-          <div className='questions__accordions flex flex-col flex-1 gap-5'>
+          <div className="questions__accordions flex flex-col flex-1 gap-5">
             {faq.map((item) => {
               return (
                 <div
                   key={item.id}
-                  className='question-answer__accordion flex justify-between items-center gap-5 p-[15px] shadow-sm shadow-[#DEDEDE] rounded-lg mb-[24px]'
+                  className="question-answer__accordion flex justify-between items-center gap-5 p-[15px] shadow-sm shadow-[#DEDEDE] rounded-lg mb-[24px]"
                   onClick={() =>
                     item.id == openQuestion
                       ? setOpenQuestion(null)
                       : setOpenQuestion(item.id)
                   }
                 >
-                  <div className='question'>
-                    <h3 className='title__question font-bold mb-[16px]'>
+                  <div className="question">
+                    <h3 className="title__question font-bold mb-[16px]">
                       {item.question}
                     </h3>
                     <p
@@ -101,11 +101,11 @@ export default function Faq() {
                     </p>
                   </div>
                   {item.id == openQuestion ? (
-                    <FiChevronDown className='w-7 h-12' />
+                    <FiChevronDown className="w-7 h-12" />
                   ) : (
                     <img
-                      src='../images/46.png'
-                      className='w-6 h-auto flex-shrink-0'
+                      src="../images/46.png"
+                      className="w-6 h-auto flex-shrink-0"
                     />
                   )}
                 </div>

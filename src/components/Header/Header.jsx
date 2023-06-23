@@ -8,14 +8,10 @@ export default function Header() {
     <>
       <header className=" site_header bg-[#F0F8F8] md:m-0 h-max pt-7  px-20 ">
         <div className="container max-w-[1170px] flex justify-center md:shadow-md">
-          <div className="h-group flex bg-white max-w-[1170px] md: w-[1170px] h-[65px] rounded-[16px]">
-            <nav className="main-navigation w-full">
-              <Navigation />
-            </nav>
+          <div className="h-group flex bg-white max-w-[1170px] md:w-[1170px] h-[65px] rounded-[16px]">
+            <nav className="main-navigation w-full">{/* <Navigation /> */}</nav>
           </div>
         </div>
-        <Title />
-        <Sponsors />
       </header>
     </>
   );

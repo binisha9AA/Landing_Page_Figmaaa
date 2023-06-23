@@ -1,19 +1,77 @@
 import React from 'react';
 
 export default function Services() {
+  const services = [
+    {
+      id: 0,
+      image: '../images/blue file.png',
+      title: ' Article Writing',
+      description:
+        'Lörem ipsum polysam spetila pyde. Trapolig regnbågsbarn och beligt ehylig viktigt',
+      arrow: '../images/blue arrow.png',
+      border: '[#267BFF]',
+    },
+    {
+      id: 1,
+      image: '../images/cyan file.png',
+      title: 'Content Writing',
+      description:
+        'Lörem ipsum polysam spetila pyde. Trapolig regnbågsbarn och beligt ehylig viktigt',
+      arrow: '../images/cyan arrow.png',
+      border: '[#21DAFF]',
+    },
+    {
+      id: 2,
+      image: '../images/orange file.png',
+      title: ' Ebook Writing',
+      description:
+        'Lörem ipsum polysam spetila pyde. Trapolig regnbågsbarn och beligt ehylig viktigt',
+      arrow: '../images/orange arrow.png',
+      border: '[#FF834B]',
+    },
+    {
+      id: 3,
+      image: '../images/yellow file.png',
+      title: ' Article Writing',
+      description:
+        'Lörem ipsum polysam spetila pyde. Trapolig regnbågsbarn och beligt ehylig viktigt',
+      arrow: '../images/yellow arrow.png',
+      border: '[#FF9318]',
+    },
+    {
+      id: 4,
+      image: '../images/purple file.png',
+      title: 'Content Writing',
+      description:
+        'Lörem ipsum polysam spetila pyde. Trapolig regnbågsbarn och beligt ehylig viktigt',
+      arrow: '../images/purple arrow.png',
+      border: '[#5252FF]',
+    },
+    {
+      id: 5,
+      image: '../images/pink file.png',
+      title: 'Ebook Writing',
+      description:
+        'Lörem ipsum polysam spetila pyde. Trapolig regnbågsbarn och beligt ehylig viktigt',
+      arrow: '../images/pink arrow.png',
+      border: '[#E72AFF]',
+    },
+  ];
   return (
-    <main className="service_section">
-      <section className=" service-section  w-full max-w-[1525px] mx-auto mt-[164.35px] ">
+    <div className="service_section">
+      <section className=" service-section  w-full max-w-[1525px] mx-auto mt-[92px] ">
         <h2 className="text-center font-bold text-[25px]">
           Our Service and Prices
         </h2>
-        <p className="text-center pt-5 pb-16 max-w-4xl mx-auto">
-          ContentAlpha offers optimal solutions at affordable rates for every
-          content need. Understanding your requirements and generating results
-          that satisfy you is our core mission. With us, you will be able to get
-          the maximum possible ROI.
-        </p>
-        <section className="services flex gap-11 justify-center flex-wrap mx-auto items-center max-w-[1032px]">
+        <div className="text-center pt-5 pb-[98px] max-w-4xl mx-auto text-[14px] md:text-[18px]">
+          <p>
+            ContentAlpha offers optimal solutions at affordable rates for every
+            content need. Understanding your requirements and generating results
+            that satisfy you is our core mission. With us, you will be able to
+            get the maximum possible ROI.
+          </p>
+        </div>
+        {/* <section className="services flex gap-11 justify-center flex-wrap mx-auto items-center max-w-[1032px]">
           <div className=" article_service w-[250px] h-64 p-5 border-2 rounded-xl border-[#267BFF]">
             <img src="../images/blue file.png" alt="" />
             <h4 className="text-[#267BFF] font-bold pt-5 pb-3">
@@ -24,7 +82,7 @@ export default function Services() {
               ehylig viktigt
             </p>
             <a href="">
-              <img src="../images/blue arrow.png" alt="" />
+              <img src="../images/blue arrow.png" />
             </a>
           </div>
           <div className=" content_services w-[250px] shadow-md  h-64 p-5 border-2 rounded-xl border-[#21DAFF]">
@@ -92,8 +150,33 @@ export default function Services() {
               <img src="../images/pink arrow.png" alt="" />
             </a>
           </div>
+        </section> */}
+        <section className="services services flex gap-[57px] justify-center flex-wrap mx-auto items-center max-w-[1032px] ">
+          {services.map((item) => (
+            <div
+              key={item.id}
+              className={`w-[250px] h-64 pt-4 pb-[29.65px] px-[26.9px] shadow-md border-2 rounded-xl ${'border-'.concat(
+                item.border
+              )}`}
+            >
+              <img src={item.image} alt="" />
+              <div
+                className={`font-bold pt-5 pb-3 ${'text-'.concat(item.border)}`}
+              >
+                <h4>{item.title}</h4>
+              </div>
+              <div className="text-[#999999] pb-5">
+                <p>{item.description}</p>
+              </div>
+              <div className="arrow_link">
+                <a href="">
+                  <img src={item.arrow} alt="" />
+                </a>
+              </div>
+            </div>
+          ))}
         </section>
       </section>
-    </main>
+    </div>
   );
 }

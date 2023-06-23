@@ -3,7 +3,7 @@ import React from 'react';
 function Price() {
   return (
     <>
-      <section className="price w-full  px-5 py-[134px] mx-auto md:max-w-[1032px]">
+      <section className="price w-full pt-[134px] pb-[133px] md:max-w-[1032px] mx-auto ">
         <h2 className=" text-center font-semibold min-w-[200px] text-[18px] mb-[20px] md:text-left">
           Calculate Your Price
         </h2>

@@ -79,12 +79,12 @@ export default function Feedback() {
             SEO content bundle package.!
           </p>
 
-          <div className="card_component shadow-md">
-            <section className="feedback grid bg-[#fbfbfb] place-items-center shadow-md mt-6 md:grid-cols-2 gap-[16px]">
+          <div className="card_component ">
+            <section className="feedback grid place-items-center mt-6 md:grid-cols-2 gap-[16px] max-w-[900px]">
               {feedback.map((item) => (
                 <div
                   key={item.id}
-                  className="top_component flex flex-col w-[310px] bg-white justify-between md:w-[400px] p-8"
+                  className="top_component flex flex-col w-[310px] bg-white justify-between md:w-[400px] p-8 shadow-md"
                 >
                   <section className="profile_component flex justify-between mb-3 ">
                     <div className="flex gap-3">

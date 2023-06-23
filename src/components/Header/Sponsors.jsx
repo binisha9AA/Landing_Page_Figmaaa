@@ -9,7 +9,7 @@ export default function Sponsors() {
         <img src="../images/LinkedIn.png" className="h-4" />
         <img src="../images/facebook.png" className="h-4" />
         <img src="../images/google.png" className="h-4" />
-        <img src="../images/nike.png" className="h-[12px]" />
+        <img src="../images/nike.png" className="h-[16px]" />
       </figure>
     </>
   );
